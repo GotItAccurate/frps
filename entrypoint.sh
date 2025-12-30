@@ -9,7 +9,7 @@ vhostHTTPPort = 8000
 vhostHTTPSPort = 8443
 
 # Your domain for subdomains
-subdomain_host = "${SUBDOMAIN_HOST}"
+subDomainHost = "${SUBDOMAIN_HOST}"
 
 # Dashboard configuration
 webServer.addr = "0.0.0.0"
@@ -21,11 +21,13 @@ webServer.password = "${DASHBOARD_PWD}"
 auth.method = "token"
 auth.token = "${FRPS_TOKEN}"
 
-# Allow custom domains
-allowPorts = [
-  { single = 2222 },
-  { start = 6000, end = 6100 }
-]
+# Allow custom ports
+[[allowPorts]]
+single = 2222
+
+[[allowPorts]]
+start = 6000
+end = 6100
 
 # TCP/UDP support
 tcpmuxHTTPConnectPort = 7001
