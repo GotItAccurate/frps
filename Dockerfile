@@ -1,4 +1,4 @@
-FROM fatedier/frps:latest
+FROM snowdreamtech/frps:latest
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
