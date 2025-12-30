@@ -10,7 +10,7 @@ vhostHTTPPort = 8000
 vhostHTTPSPort = 8443
 
 # Your domain for subdomains
-subDomainHost = "${SUBDOMAIN_HOST}"
+# subDomainHost = "${SUBDOMAIN_HOST}"
 
 # Dashboard configuration
 webServer.addr = "0.0.0.0"
