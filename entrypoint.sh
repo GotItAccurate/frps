@@ -20,17 +20,6 @@ webServer.password = "${DASHBOARD_PWD}"
 # Authentication
 auth.method = "token"
 auth.token = "${FRPS_TOKEN}"
-
-# Allow custom ports
-[[allowPorts]]
-single = 2222
-
-[[allowPorts]]
-start = 6000
-end = 6100
-
-# TCP/UDP support
-tcpmuxHTTPConnectPort = 7001
 EOF
 
 echo "==================================="
