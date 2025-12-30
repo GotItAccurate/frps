@@ -2,6 +2,7 @@
 
 cat > /etc/frp/frps.toml <<EOF
 # FRP Server Configuration
+bindAddr = "0.0.0.0"
 bindPort = 7000
 
 # HTTP/HTTPS ports
